@@ -7,5 +7,6 @@
 #define MASKOFF_N(b) (b & 0xF)
 #define MASKOFF_NN(b) (b & (MASKOFF_Y(b) | MASKOFF_N(b)))
 #define MASKOFF_NNN(b) ((b & (MASKOFF_X(b) | MASKOFF_Y(b) | MASKOFF_N(b))))
+// todo: add a opcode get macro
 
 #endif
