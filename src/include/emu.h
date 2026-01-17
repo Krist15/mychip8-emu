@@ -9,7 +9,6 @@
 #define DISPLAY_SIZE DISPLAY_WIDTH * DISPLAY_HEIGHT
 #define STACK_SIZE 16
 
-extern void (*op_table[])(struct emu*);
 
 struct emu {
     uint8_t memory[MEMORY_SIZE];
@@ -19,5 +18,7 @@ struct emu {
     uint16_t idx_reg;
     uint8_t pc_reg;
 };
+
+extern void (*op_table[])(struct emu*);
 
 #endif
