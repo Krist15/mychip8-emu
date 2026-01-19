@@ -7,5 +7,6 @@ void jump(struct emu *emu);
 void set_reg_VX(struct emu *emu);
 void add_reg_VX(struct emu *emu);
 void set_idx(struct emu *emu);
+void draw(struct emu *emu);
 
 #endif
