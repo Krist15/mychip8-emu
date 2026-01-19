@@ -9,7 +9,7 @@ static inline void inc_pc(uint16_t *pc_reg) {
 
 void clear_screen(struct emu *emu) {
     memset(emu->display, 0, DISPLAY_SIZE);
-    inc_pc(&emu->pc_reg);
+    inc_pc(&emu->pc);
 }
 
 void jump(struct emu *emu) {
