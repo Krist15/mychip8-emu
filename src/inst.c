@@ -3,7 +3,7 @@
 
 #include <string.h>
 
-static inline void inc_pc(uint8_t *pc_reg) {
+static inline void inc_pc(uint16_t *pc_reg) {
     *pc_reg += 2;
 }
 
