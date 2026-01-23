@@ -8,5 +8,6 @@ void set_reg_VX(struct emu *emu);
 void add_reg_VX(struct emu *emu);
 void set_idx(struct emu *emu);
 void draw(struct emu *emu);
+void logic_arithmetic_inst(struct emu *emu);
 
 #endif

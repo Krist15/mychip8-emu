@@ -11,6 +11,7 @@ void (*op_table[])(struct emu *) = {
     [0x7] = add_reg_VX,
     [0xA] = set_idx,
     [0xD] = draw,
+    // [0x8] = logic_arithmetic_inst
 };
 
 void read_rom(FILE *rom, struct emu *emu) {
